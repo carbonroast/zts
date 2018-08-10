@@ -35,7 +35,7 @@ public class PlayerController : NetworkBehaviour {
 
                 string netid = hit2d.collider.GetComponent<NetworkIdentity>().netId.ToString();
                 SpriteTile tileClicked = SpriteTileManager.GetTile(position2d.ToString() + " " + netid);
-
+                
                 Debug.Log(
                     "name - " + tileClicked.name + 
                     "location - " + tileClicked.location + 
