@@ -5,12 +5,10 @@ using UnityEngine.Tilemaps;
 using UnityEngine.Networking;
 
 public class PlayerController : NetworkBehaviour {
-
-    public Camera cam;
-
+    Camera cam;
 	// Use this for initialization
 	void Start () {
-		
+        cam = Camera.main;
 	}
 	
 	// Update is called once per frame
@@ -38,8 +36,8 @@ public class PlayerController : NetworkBehaviour {
                 
                 Debug.Log(
                     "name - " + tileClicked.name + 
-                    "location - " + tileClicked.location + 
-                    "buildable -" + tileClicked.buildable
+                    " location - " + tileClicked.location + 
+                    " buildable -" + tileClicked.buildable
                 );
                 //Debug.Log(position);
                 //Debug.Log("clicked - " + mousecoord + " " + hit2d.collider.name);

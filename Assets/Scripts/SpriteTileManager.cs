@@ -17,8 +17,5 @@ public class SpriteTileManager : MonoBehaviour {
         return spriteTiles[name];
     }
 
-    public static void Print2DArray()
-    {
 
-    }
 }
